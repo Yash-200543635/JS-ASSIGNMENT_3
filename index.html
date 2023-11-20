@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
+    <title>Pizza Order Form</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Pizza Order Form</h1>
+            <p id="student-info"></p>
+        </header>
+
+        <form id="pizza-form">
+            <label for="pizza-size">Pizza Size:</label>
+            <select id="pizza-size" name="pizza-size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+
+            <label for="crust">Crust Type:</label>
+            <select id="crust" name="crust">
+                <option value="thin">Thin Crust</option>
+                <option value="thick">Thick Crust</option>
+                <option value="stuffed">Stuffed Crust</option>
+            </select>
+
+            <label for="toppings">Toppings:</label>
+            <input type="text" id="toppings" name="toppings" placeholder="Enter toppings">
+
+            <label for="delivery">Delivery:</label>
+            <input type="checkbox" id="delivery" name="delivery">
+
+            <button type="button" id="order-btn">Place Order</button>
+        </form>
+
+        <div id="order-summary"></div>
+    </div>
+</body>
+</html>
